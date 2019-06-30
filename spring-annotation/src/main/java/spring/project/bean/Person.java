@@ -1,6 +1,5 @@
 package spring.project.bean;
 
-import lombok.Data;
 import org.springframework.beans.factory.annotation.Value;
 
 public class Person {
@@ -11,7 +10,6 @@ public class Person {
     private String sex;
 
     public Person() {
-        System.out.println("person construct ...");
     }
 
     public String getName() {
