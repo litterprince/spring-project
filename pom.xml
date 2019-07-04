@@ -13,6 +13,12 @@
         <junit.version>4.11</junit.version>
     </properties>
 
+    <modules>
+        <module>spring-annotation</module>
+        <module>spring-test</module>
+        <module>spring-toolkit</module>
+    </modules>
+
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
         <dependency>
