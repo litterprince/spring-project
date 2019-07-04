@@ -1,4 +1,4 @@
-package spring.project.util;
+package com.spring.annotation.util;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;

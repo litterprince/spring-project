@@ -1,11 +1,11 @@
-package spring.project;
+package com.spring.annotation;
 
+import com.spring.annotation.bean.Person;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import spring.project.bean.Color;
-import spring.project.bean.Person;
-import spring.project.config.MainConfig;
-import spring.project.config.PropertiesConfig;
+import com.spring.annotation.bean.Color;
+import com.spring.annotation.config.MainConfig;
+import com.spring.annotation.config.PropertiesConfig;
 
 import static org.junit.Assert.assertTrue;
 

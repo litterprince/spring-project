@@ -1,4 +1,4 @@
-package spring.project;
+package com.spring.test;
 
 /**
  * Hello world!
