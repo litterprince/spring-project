@@ -6,7 +6,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan({"spring.project.bean"})
+@ComponentScan({"com.spring.annotation"})
 public class MainConfig {
 
     @Bean(initMethod = "initMethod", destroyMethod = "destroyMethod")

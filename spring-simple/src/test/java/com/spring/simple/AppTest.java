@@ -1,4 +1,4 @@
-package com.spring.test;
+package com.spring.simple;
 
 import static org.junit.Assert.assertTrue;
 

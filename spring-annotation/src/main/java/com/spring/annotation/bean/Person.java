@@ -1,30 +1,21 @@
 package com.spring.annotation.bean;
 
+import lombok.Data;
+import lombok.ToString;
 import org.springframework.beans.factory.annotation.Value;
 
+@Data
+@ToString
 public class Person {
     @Value("${person.name}")
     private String name;
-
-    @Value("男")
     private String sex;
 
     public Person() {
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
+    public Person(String name, String sex) {
         this.name = name;
-    }
-
-    public String getSex() {
-        return sex;
-    }
-
-    public void setSex(String sex) {
         this.sex = sex;
     }
 }
