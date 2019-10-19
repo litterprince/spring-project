@@ -1,18 +1,18 @@
 package com.spring.simple.action;
 
-import com.spring.simple.po.UserBean;
-import com.spring.simple.service.UserService;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import javax.servlet.http.HttpServletRequest;
+
+import lombok.extern.slf4j.Slf4j;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import javax.servlet.http.HttpServletRequest;
+import com.spring.simple.service.UserService;
 
 @Controller
+@Slf4j
 public class UserController {
-    static Logger logger = LogManager.getLogger(UserController.class);
 
     @Autowired
     UserService userService;
@@ -22,7 +22,7 @@ public class UserController {
         /*UserBean param = new UserBean();
         param.setUserName("123");
         List<UserBean> userList = userService.findByParam(param);*/
-        logger.error("error");
+        log.error("error");
         return "index";
     }
 }

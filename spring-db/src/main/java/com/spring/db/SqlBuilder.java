@@ -1,12 +1,5 @@
 package com.spring.db;
 
-import com.spring.db.mapping.Column;
-import com.spring.db.mapping.DbBeanProcessor;
-import com.spring.db.mapping.Table;
-import org.apache.commons.lang3.StringUtils;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import java.beans.Transient;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
@@ -15,8 +8,16 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
+import lombok.extern.slf4j.Slf4j;
+
+import org.apache.commons.lang3.StringUtils;
+
+import com.spring.db.mapping.Column;
+import com.spring.db.mapping.DbBeanProcessor;
+import com.spring.db.mapping.Table;
+
+@Slf4j
 public class SqlBuilder<T>  {
-    private static final Logger logger = LogManager.getLogger(SqlBuilder.class);
 
     public SqlBuilder() {
     }
@@ -117,7 +118,7 @@ public class SqlBuilder<T>  {
         }
         catch (Exception localException)
         {
-            logger.error("获取属性值失败！", localException);
+            log.error("获取属性值失败！", localException);
             throw new RuntimeException("获取属性值失败！", localException);
         }
         return localObject;
