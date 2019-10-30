@@ -34,7 +34,7 @@ public class AppTestAop {
 
     @Test
     public void test() {
-        testAop.pushDataToCrm(1, null, 1, "");
+        testAop.say("hi");
         log.info("done");
     }
 }

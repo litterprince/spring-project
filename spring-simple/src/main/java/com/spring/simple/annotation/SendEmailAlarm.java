@@ -17,17 +17,17 @@ public @interface SendEmailAlarm {
      * 邮件标题
      * @return title
      */
-    String title();
+    String title() default "title";
 
     /**
      * 系统类型
      * @return systemType
      */
-    String systemType();
+    String systemType() default "systemType";
 
     /**
      * 系统名称
      * @return systemName
      */
-    String systemName();
+    String systemName() default "systemName";
 }
