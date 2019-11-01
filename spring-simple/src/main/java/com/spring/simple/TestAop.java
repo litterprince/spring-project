@@ -1,7 +1,6 @@
 package com.spring.simple;
 
 import com.spring.simple.annotation.OfflineMethod;
-import org.springframework.stereotype.Component;
 
 /**
  * <p>Title Test </p>
@@ -24,5 +23,8 @@ public class TestAop implements InterfaceTest {
     @Override
     public void say(String words) {
         System.out.println(words);
+    }
+
+    public void say() {
     }
 }
