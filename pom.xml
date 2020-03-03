@@ -21,6 +21,7 @@
         <module>spring-simple</module>
         <module>spring-toolkit</module>
         <module>spring-util</module>
+        <module>spring-mybatis</module>
     </modules>
 
     <dependencies>
